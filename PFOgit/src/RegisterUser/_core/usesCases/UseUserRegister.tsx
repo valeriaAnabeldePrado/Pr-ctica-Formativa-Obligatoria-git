@@ -15,9 +15,9 @@ export const useRegisterUser = () => {
       return result;
     } catch (err: unknown) {
       if (err instanceof Error) {
-        setError(err.message || "Ocurrió un error.");
+        setError(err.message || "error en la peticionnn.");
       } else {
-        setError("Ocurrió un error.");
+        setError("erro kpo.");
       }
       throw err;
     } finally {
