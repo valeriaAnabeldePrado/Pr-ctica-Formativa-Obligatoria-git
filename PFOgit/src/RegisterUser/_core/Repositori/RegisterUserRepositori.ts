@@ -8,7 +8,7 @@ export const userRepository = {
       const response = await axios.post("/la url en el .env", user);
       return response.data;
     } catch (error) {
-      console.error("Error al registrar usuario:", error);
+      console.error("ño:", error);
       throw error;
     }
   },
