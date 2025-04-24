@@ -1,0 +1,83 @@
+import { useRegisterUser } from "../_core/usesCases/UseUserRegister";
+import "./glascard.css";
+import { useState } from "react";
+
+const CardGlass = () => {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+
+  const [emailError, setEmailError] = useState("");
+
+  const { submit: registerUser } = useRegisterUser();
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    
+    if (!email.includes("@")) {
+      setEmailError("Email inválido");
+      return;
+    } else {
+      setEmailError("");
+    }
+
+    const payload = {
+      firstName,
+      lastName,
+      email,
+      phone,
+    };
+
+    registerUser(payload);
+  };
+
+  return (
+    <section className="glass-card">
+      <form onSubmit={handleSubmit} className="form">
+        <h2>Registro de Usuario</h2>
+
+        <input
+          type="text"
+          name="firstName"
+          placeholder="Nombre"
+          value={firstName}
+          onChange={(e) => setFirstName(e.target.value)}
+          required
+        />
+
+        <input
+          type="text"
+          name="lastName"
+          placeholder="Apellido"
+          value={lastName}
+          onChange={(e) => setLastName(e.target.value)}
+          required
+        />
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Correo electrónico"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+        {emailError && <p className="error">{emailError}</p>}
+
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Teléfono"
+          value={phone}
+          onChange={(e) => setPhone(e.target.value)}
+        />
+
+        <button type="submit">Registrarse</button>
+      </form>
+    </section>
+  );
+};
+
+export default CardGlass;
