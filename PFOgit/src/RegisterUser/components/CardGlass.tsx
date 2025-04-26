@@ -7,6 +7,9 @@ const CardGlass = () => {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+  const [streetAddress, setStreetAddress] = useState("");
+  const [city, setCity] = useState("");
+  const [postalCode, setPostalCode] = useState("");
 
   const [emailError, setEmailError] = useState("");
 
@@ -72,6 +75,30 @@ const CardGlass = () => {
           placeholder="Teléfono"
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
+        />
+
+<input
+          type="text"
+          name="streetAddress"
+          placeholder="Dirección (Calle y Número)"
+          value={streetAddress}
+          onChange={(e) => setStreetAddress(e.target.value)}
+        />
+
+<input
+          type="text"
+          name="city"
+          placeholder="Ciudad"
+          value={city}
+          onChange={(e) => setCity(e.target.value)}
+        />
+
+<input
+          type="text"
+          name="postalCode"
+          placeholder="Código Postal"
+          value={postalCode}
+          onChange={(e) => setPostalCode(e.target.value)}
         />
 
         <button type="submit">Registrarse</button>
