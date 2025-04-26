@@ -12,7 +12,7 @@ const CardGlass = () => {
 
   const { submit: registerUser } = useRegisterUser();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     
@@ -23,6 +23,11 @@ const CardGlass = () => {
       setEmailError("");
     }
 
+    if (phone.length < 8) {
+      alert("El teléfono debe tener al menos 8 dígitos.");
+      return;
+    }
+
     const payload = {
       firstName,
       lastName,
@@ -30,7 +35,16 @@ const CardGlass = () => {
       phone,
     };
 
-    registerUser(payload);
+    try {
+      await registerUser(payload); 
+      // Limpiar el formulario post envio
+      setFirstName("");
+      setLastName("");
+      setEmail("");
+      setPhone("");
+    } catch (err) {
+      console.error("Error al registrar:", err); 
+    }
   };
 
   return (
