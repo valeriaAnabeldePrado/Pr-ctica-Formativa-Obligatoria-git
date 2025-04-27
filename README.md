@@ -1,54 +1,47 @@
-# React + TypeScript + Vite
+# Práctica Formativa Obligatoria 📝
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenidos al repositorio de la **Práctica Formativa Obligatoria N° 1** donde simulamos el flujo de trabajo con Git: creación de ramas, desarrollo independiente, conflicto y resolución.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Participantes y responsabilidades
 
-## Expanding the ESLint configuration
+- 🧑‍💻 **Anabel De Prado** 
+- 👨‍💻 **Hernán Santarelli** 
+- 🧑‍💻 **Anabel De Prado** 
+- 👨‍💻 **Hernán Santarelli** 
+- 🧑‍💻 **Anabel De Prado** 
+- 👨‍💻 **Hernán Santarelli** 
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📂 Estructura de carpetas
+
+```
+PRACTICA-FORMATIVA-OBLIGATORIA-GIT/
+├── PFOgit/          # Front-end React/Vite
+├── PFOgitback/      # Back-end Java + simulación PHP
+├── index.html       # Archivo de práctica Formativa
+├── README.md        # Este archivo
+└── .gitignore
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📖 Uso
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/tu-repo.git
+   ```
+2. Navega al proyecto:
+   ```bash
+   cd PRACTICA-FORMATIVA-OBLIGATORIA-GIT
+   ```
+3. Revisa las ramas:
+   ```bash
+   git branch -a
+   ```
+4. Cambia a la rama de tu interés:
+   ```bash
+   git checkout feature/perfil-nuevo-ui
+   ```
