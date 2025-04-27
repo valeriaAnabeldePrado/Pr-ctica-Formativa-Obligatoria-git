@@ -7,11 +7,10 @@ Bienvenidos al repositorio de la **Práctica Formativa Obligatoria N° 1** donde
 ## 🚀 Participantes y responsabilidades
 
 - 🧑‍💻 **Anabel De Prado** 
+- 🧑‍💻 **Emiliano Vargas** 
 - 👨‍💻 **Hernán Santarelli** 
-- 🧑‍💻 **Anabel De Prado** 
-- 👨‍💻 **Hernán Santarelli** 
-- 🧑‍💻 **Anabel De Prado** 
-- 👨‍💻 **Hernán Santarelli** 
+- 🧑‍💻 **Isabella Chiaradía** 
+- 👨‍💻 **Yesica Lucero**
 
 
 ## 📂 Estructura de carpetas
