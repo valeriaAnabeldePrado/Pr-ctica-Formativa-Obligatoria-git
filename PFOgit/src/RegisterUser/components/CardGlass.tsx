@@ -77,23 +77,23 @@ const CardGlass = () => {
           onChange={(e) => setPhone(e.target.value)}
         />
 
-<input
+        <input
           type="text"
           name="streetAddress"
-          placeholder="Dirección (Calle y Número)"
+          placeholder="Dirección completa"
           value={streetAddress}
           onChange={(e) => setStreetAddress(e.target.value)}
         />
 
-<input
+        <input
           type="text"
           name="city"
-          placeholder="Ciudad"
+          placeholder="Localidad"
           value={city}
           onChange={(e) => setCity(e.target.value)}
         />
 
-<input
+        <input
           type="text"
           name="postalCode"
           placeholder="Código Postal"
