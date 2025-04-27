@@ -20,7 +20,7 @@ const CardGlass = () => {
 
     
     if (!email.includes("@")) {
-      setEmailError("Por favor ingrese un mail valido");
+      setEmailError("El correo ingresado no es válido");
       return;
     } else {
       setEmailError("");
